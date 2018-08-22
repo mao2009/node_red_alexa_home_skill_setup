@@ -11,7 +11,7 @@ fi
 
 update-nodejs-and-nodered
 cd .node-red
-npm install node-red-contrlib-alexa-home-skill
+npm install node-red-contrib-alexa-home-skill
 
 sudo systemctl enable nodered
 sudo systemctl start nodered
