@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install nodered npm python-pip -y
+sudo apt install git nodered npm python-pip -y
 
 git clone https://github.com/mao2009/broadlink_ctl
 sudo ln -s ./broadlink_ctl/broadlink_ctl.python.py broadlink.py
