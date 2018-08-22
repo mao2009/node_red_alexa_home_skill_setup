@@ -10,8 +10,8 @@ if [[ $(python --version) == "2*" ]];then
 fi
 
 update-nodejs-and-nodered
-cd .node-red
-npm install node-red-contrib-alexa-home-skill
-
-sudo systemctl enable nodered
 sudo systemctl start nodered
+sudo systemctl enable nodered
+sudo reboot
+cd .node-red
+sudo npm install node-red-contrib-alexa-home-skill
