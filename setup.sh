@@ -1,7 +1,8 @@
 sudo apt update
 sudo apt install nodered npm python-pip -y
 
-curl https://github.com/mao2009/broadlink_ctl/blob/master/broadlink_ctl.py - broadlink.py
+git clone https://github.com/mao2009/broadlink_ctl
+sudo ln -s ./broadlink_ctl/broadlink_ctl.python.py broadlink.py
 
 pip install broadlink
 if [[ $(python --version) == "2*" ]];then
