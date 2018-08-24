@@ -15,10 +15,11 @@ echo "#Start nodered"
 sudo systemctl start nodered
 sudo systemctl enable nodered
 
-until [ -e .node-red] ; do
+until [ -e .node-red ] ; do
     sleep 1
 done
 cd .node-red
 
 echo "#install alaxa home skill"
 npm install node-red-contrib-alexa-home-skill
+sudo systemctl restart nodered
